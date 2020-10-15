@@ -64,6 +64,6 @@ class Car extends Composite {
 
 const myCar = new Car();
 myCar.add(new Engine());
-myCar.add(new Body())
-myCar.add(new Tools())
-console.log(myCar.getName(), myCar.getPrice()) // Audi 1850
+myCar.add(new Body());
+myCar.add(new Tools());
+console.log(myCar.getName(), myCar.getPrice()); // Audi 1850

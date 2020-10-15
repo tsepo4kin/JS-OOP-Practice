@@ -1,47 +1,47 @@
 class Model {
   constructor(color) {
-    this.color = color
+    this.color = color;
   }
 }
 
-class Color{
+class Color {
   constructor(type) {
-    this.type = type
+    this.type = type;
   }
   get() {
-    return this.type
+    return this.type;
   }
 }
 
 class BlackColor extends Color {
   constructor() {
-    super("Dark black")
+    super("Dark black");
   }
 }
 
 class SillbrigColor extends Color {
   constructor() {
-    super('silbermetalic')
+    super("silbermetalic");
   }
 }
 
 class Audi extends Model {
   constructor(color) {
-    super(color)
+    super(color);
   }
 
   paint() {
-    return 'Auto: Audi, Color:' + this.color.get()
+    return "Auto: Audi, Color:" + this.color.get();
   }
 }
 
 class Bmw extends Model {
   constructor(random) {
-    super(random)
+    super(random);
   }
 
   paint() {
-    return 'Auto: Audi, Color: ' + this.color.get()
+    return "Auto: Audi, Color: " + this.color.get();
   }
 }
 

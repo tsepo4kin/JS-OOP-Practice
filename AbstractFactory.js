@@ -1,7 +1,7 @@
 // простым языком я представляю себе это как фабрику над фабрикой*(фабричным методом)
 
 function BMWProducer(kind) {
-  return kind === 'sport' ? sportcarFactory : familycarFactory
+  return kind === "sport" ? sportcarFactory : familycarFactory;
 }
 
 function sportcarFactory() {
@@ -20,7 +20,7 @@ class Z4 {
   }
 
   info() {
-    return 'this is a sportcar BMW Z4'
+    return "this is a sportcar BMW Z4";
   }
 }
 
@@ -32,6 +32,6 @@ class X5 {
   }
 
   info() {
-    return 'this is a familycar BMW X5'
+    return "this is a familycar BMW X5";
   }
 }

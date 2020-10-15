@@ -17,7 +17,7 @@
 
 class Counter {
   constructor() {
-    if(typeof Counter.instance === 'object') return Counter.instance;
+    if (typeof Counter.instance === "object") return Counter.instance;
     instance.count = 0;
     Counter.instance = this;
     return this;
@@ -34,10 +34,10 @@ class Counter {
 const myCount1 = new Counter();
 const myCount2 = new Counter();
 
-myCount1.increaceCount()
-myCount1.increaceCount()
-myCount2.increaceCount()
-myCount2.increaceCount()
+myCount1.increaceCount();
+myCount1.increaceCount();
+myCount2.increaceCount();
+myCount2.increaceCount();
 
-myCount1.getCount() //4
-myCount2.getCount() //4
+myCount1.getCount(); //4
+myCount2.getCount(); //4

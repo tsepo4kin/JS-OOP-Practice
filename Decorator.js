@@ -1,56 +1,56 @@
 class Car {
   constructor() {
-    this.model = 'Car'
-    this.price = 10000
+    this.model = "Car";
+    this.price = 10000;
   }
 
   getDescription() {
-    return this.model
+    return this.model;
   }
-  
+
   getPrice() {
-    return this.price
+    return this.price;
   }
 }
 
 class Tesla extends Car {
   constructor() {
-    super()
-    this.model = 'Tesla'
-    this.price = 20000
+    super();
+    this.model = "Tesla";
+    this.price = 20000;
   }
 }
 
 class AutopilotDec {
   constructor(car) {
-    this.car = car
+    this.car = car;
   }
 
   getPrice() {
-    return this.car.getPrice + 5000
+    return this.car.getPrice + 5000;
   }
 
   getDescription() {
-    return this.car.getDescription + ' With autopilot'
+    return this.car.getDescription + " With autopilot";
   }
 }
 
 class ParktronicDec {
   constructor(car) {
-    this.car = car
+    this.car = car;
   }
 
   getPrice() {
-    return this.car.getPrice + 3000
+    return this.car.getPrice + 3000;
   }
 
   getDescription() {
-    return this.car.getDescription + ' With parktronic'
+    return this.car.getDescription + " With parktronic";
   }
 }
 
-let tesla = new Tesla()
-tesla = new AutopilotDec(tesla)
-tesla = new ParktronicDec(tesla)
-console.log(tesla.getDescription, tesla.getPrice)
+let tesla = new Tesla();
+tesla = new AutopilotDec(tesla);
+tesla = new ParktronicDec(tesla);
+console.log(tesla.getDescription, tesla.getPrice);
 // Tesla with autopilot with parktronic 28000
